@@ -1,0 +1,16 @@
+venv/
+processed_dataset/
+processed_faces/
+aligned_faces/
+videos/
+
+*.pth
+*.npy
+*.mp4
+*.avi
+*.mov
+
+best_lstm_model.pth
+lstm_features.npy
+lstm_labels.npy
+__pycache__/
