@@ -33,7 +33,18 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+
 # ── Global CSS ────────────────────────────────────────────────────────────────
+st.markdown("""
+<style>
+section[data-testid="stSidebar"]{
+    display: block !important;
+    visibility: visible !important;
+    width: 300px !important;               
+}
+</style>
+""", unsafe_allow_html=True)
+
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap');
@@ -41,7 +52,7 @@ st.markdown("""
 html, body, [class*="css"] { font-family: 'Space Grotesk', sans-serif; }
 
 .stApp { background: #050d1a; color: #e2e8f0; }
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer{ visibility: hidden; }
 
 section[data-testid="stSidebar"] {
     background: #0a1628;
